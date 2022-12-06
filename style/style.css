@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Jost", sans-serif;
+
+}
+
+body {
+  background-image: url(../images/Background.png);
+
+  background-size: 100%;
+
+}
+
+
+
+
+.container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  align-items: center;
+  margin: 0 auto;
+
+  padding-top: 40px;
+  color: #ffffff;
+}
+
+.text {
+  color: green;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+select {
+  padding: 10px 18px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.container-2 {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+
+  color: #ffffff;
+  align-items: center;
+  margin: 0 auto;
+  gap: 450px;
+
+  padding-top: 100px;
+}
+
+.row-1 h4 {
+  position: relative;
+  top: 23px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.936);
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.card {
+  width: 260px;
+  margin-top: 50px;
+  background-color: red;
+  text-align: center;
+}
+
+.card:hover .card-img {
+  transform: scale(0.9);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.card {
+  backdrop-filter: blur(5px) saturate(200%);
+  -webkit-backdrop-filter: blur(5px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.5);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  background-color: rgba(109, 109, 156, 0.229);
+  backdrop-filter: blur(3px);
+}
+
+.card-time {
+  font-size: 50px;
+}
+
+.card-img {
+  width: 200px;
+}
+
+
+
+table {
+  color: rgb(0, 244, 8);
+  width: 90%;
+  height: 00px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40px;
+
+}
+
+td {
+  border: 1px solid #ffffff;
+
+}
+
+th {
+
+  flex-wrap: wrap;
+  border: 2px solid #ffffff;
+}
+
+
+@media only screen and (max-width: 450px) {
+  body {
+    height: 177vh;
+    background-image: url(../images/mechet.jpg);
+    background-repeat: repeat;
+    overflow-x: hidden;
+    backdrop-filter: blur(2px);
+    scroll-behavior: smooth;
+
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+    color: #ffffff;
+    position: absolute;
+    top: 200px;
+  }
+
+  .header h1 {
+    color: rgb(0, 0, 0);
+  }
+
+  .card {
+    width: 180px;
+    position: relative;
+    background-color: #58ff4f;
+    text-align: center;
+
+  }
+
+  .card:hover {
+    background-color: rgba(102, 255, 0, 0.555);
+  }
+
+  .card img {
+    width: 138px;
+  }
+
+  .card h2 {
+    color: rgb(222, 2, 2);
+  }
+
+  .card h3 {
+    color: rgb(0, 0, 0);
+  }
+
+  .bg-card-1 {
+    display: none;
+  }
+
+  .bg-card-2 {
+    display: none;
+  }
+
+  .text {
+    font-size: 14px;
+    display: flex;
+    position: absolute;
+    top: 220px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+
+  }
+
+  .container-3 .row {
+    margin-top: 23px;
+  }
+
+  table {
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    font-size: 10px;
+    border-color: #7e0000;
+    margin: 0 auto;
+
+  }
+
+  .row-1 h4 {
+    position: absolute;
+    bottom: 170px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.936);
+    width: 100%;
+  }
+
+  select {
+    background-color: #1846eb53;
+  }
+
+  .box-1 h2 {
+    color: rgb(0, 0, 0);
+  }
+
+}
